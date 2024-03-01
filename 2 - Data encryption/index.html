@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "main.css" />
+    <link rel = "shortcut icon" href = "images/icon.png" />
+    <title>Website Encryption</title>
+</head>
+<body>
+    <header class = "header">
+        <div class = "title">
+            <img src = "images/icon.png" />
+            <h2>Data Encryption Website</h2>
+        </div>
+        <div class = "info">
+            <a href = "#">About us</a>
+            <a class = "active" href = "#">Contact</a>
+        </div>
+    </header>
+
+    <div class = "main-container">
+        <div class = "container" id = "first">
+            <h3 class = "title">Сторона Боба</h3>
+            <div class = "settings-section">
+                <div class = "input">
+                    <label for="name">Приватный</label>
+                    <input type="text" id="privateFirst" name="name" autocomplete="off" />
+                </div>
+
+                <div class = "input">
+                    <label for="name">Публичный</label>
+                    <input type="text" id="publicFirst" name="name" autocomplete="off" />
+                </div>
+            </div>
+            <div class = "input">
+                <label for="name">Сообщение</label>
+                <input type="text" id="messageFirst" name="name" autocomplete="off" />
+            </div>
+            <button class = "button" id = "keyBtnFirst">Рассчитать ключ</button>
+            <button class = "button" id = "buttonFirst">Отправить</button>
+        </div>
+
+        <div class = "container container-settings">
+            <div class = "settings-section">
+                <div class = "input">
+                    <label for="name">Простое число P</label>
+                    <input type="text" id="numberP" name="name" autocomplete="off" value = "17"/>
+                </div>
+
+                <div class = "input">
+                    <label for="name">Модуль G</label>
+                    <input type="text" id="moduleG" name="name" autocomplete="off" value = "37"/>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container" id = second>
+            <h3 class = "title">Сторона Алисы</h3>
+            <div class = "settings-section">
+                <div class = "input">
+                    <label for="name">Приватный</label>
+                    <input type="text" id="privateSecond" name="name" autocomplete="off" />
+                </div>
+
+                <div class = "input">
+                    <label for="name">Публичный</label>
+                    <input type="text" id="publicSecond" name="name" autocomplete="off" />
+                </div>
+            </div>
+            <div class = "input">
+                <label for="name">Сообщение</label>
+                <input type="text" id="messageSecond" name="name" autocomplete="off" />
+            </div>
+            <button class = "button" id = "keyBtnSecond">Рассчитать ключ</button>
+            <button class = "button" id = "buttonSecond">Отправить</button>
+        </div>
+    </div>
+
+    <script src = "srcipt.js"></script>
+</body>
+</html>
